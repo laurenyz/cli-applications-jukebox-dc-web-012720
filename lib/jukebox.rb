@@ -65,3 +65,15 @@ def play(songs_array)
 end 
 
 play(songs)
+
+def exit_jukebox
+  puts "Goodbye"
+end
+
+def run 
+  puts "Please enter a command:"
+  user_input = gets.strip
+  if user_input == "exit"
+    return exit_jukebox
+  if user_input ==
+end 
