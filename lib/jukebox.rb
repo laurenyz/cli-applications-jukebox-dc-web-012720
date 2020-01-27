@@ -51,6 +51,8 @@ end
 def play(songs_array)
   puts "Please enter a song name or number:"
   user_input = gets.strip
-  if user_input < songs_array.length || user_input 
+  if user_input < songs_array.length
+    
+  elsif songs_array.find_index
   
 end 
