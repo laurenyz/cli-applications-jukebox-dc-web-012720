@@ -38,3 +38,12 @@ def help
   puts "- play : lets you choose a song to play"
   puts "- exit : exits this program"
 end
+
+def list(songs)
+i = 0
+  while i < songs.length
+  list_number = i + 1
+  puts "#{list_number}. #{songs[i]}"
+  i += 1
+  end
+end 
