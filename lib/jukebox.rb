@@ -39,13 +39,18 @@ def help
   puts "- exit : exits this program"
 end
 
-def list(songs)
+def list(songs_array)
 i = 0
-  while i < songs.length
+  while i < songs_array.length
   list_number = i + 1
-  puts "#{list_number}. #{songs[i]}"
+  puts "#{list_number}. #{songs_array[i]}"
   i += 1
   end
 end 
 
-list(songs)
+def play(songs_array)
+  puts "Please enter a song name or number:"
+  user_input = gets.strip
+  if user_input < songs_array.length || user_input 
+  
+end 
