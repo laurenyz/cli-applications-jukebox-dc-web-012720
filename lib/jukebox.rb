@@ -1,3 +1,4 @@
+require'pry'
 # songs = [
 #   "Phoenix - 1901",
 #   "Tokyo Police Club - Wait Up",
@@ -52,6 +53,7 @@ def play(songs_array)
   puts "Please enter a song name or number:"
   user_input = gets.strip
   if user_input < songs_array.length
+    binding.pry
     i = user_input - 1 
     puts "Playing #{songs_array[i]}"
   elsif songs_array.find_index(user_input)
