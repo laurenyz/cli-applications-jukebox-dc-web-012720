@@ -53,8 +53,10 @@ def play(songs_array)
   user_input = gets.strip
   if user_input < songs_array.length
     i = user_input - 1 
-    puts "Playing #{songs_array[i]"
+    puts "Playing #{songs_array[i]}"
   elsif songs_array.find_index(user_input)
-    puts "Playing #{}"
-  
+    puts "Playing #{user_input}"
+  else 
+    puts "Invalid input, please try again"
+  end
 end 
